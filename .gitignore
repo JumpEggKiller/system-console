@@ -1,0 +1,11 @@
+build/
+__pycache__/
+*.pyc
+install*.log
+dist/
+installer/*.exe
+releases/
+position.json
+*.log
+f11_test.py
+verify*.png
