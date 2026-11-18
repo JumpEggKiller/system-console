@@ -2,6 +2,7 @@
 
 桌面整合监控 HUD —— 1920×1080,左列 CPU + 内存,右侧 GPU 多卡,右下网络上传/下载。
 无边框窗口可拖拽,F11 在窗口所在显示器全屏。
+**Linux 版**:见 [README-linux.md](README-linux.md)(tkinter + psutil + nvidia-smi,布局一致;需 X11)。
 
 ![System Console screenshot](screenshot.png)
 

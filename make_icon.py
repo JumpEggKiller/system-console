@@ -1,4 +1,9 @@
-"""System Console icon: Catppuccin dark + CPU grid + GPU card + net arrows."""
+"""System Console icon: Catppuccin dark + CPU grid + GPU card + net arrows.
+
+Writes system_console.ico (multi-size) and system_console.png (256px, for Linux/.desktop)
+next to this script.
+"""
+import os
 from PIL import Image, ImageDraw
 
 def col(v):
@@ -44,10 +49,12 @@ def make(size):
 
 sizes = [16, 24, 32, 48, 64, 128, 256]
 imgs = [make(s) for s in sizes]
+HERE = os.path.dirname(os.path.abspath(__file__))
 imgs[-1].save(
-    r"C:\Users\micasa\system-console\system_console.ico",
+    os.path.join(HERE, "system_console.ico"),
     format="ICO",
     sizes=[(i.width, i.height) for i in imgs],
     append_images=imgs[:-1],
 )
+imgs[-1].save(os.path.join(HERE, "system_console.png"), format="PNG")
 print("icon written")

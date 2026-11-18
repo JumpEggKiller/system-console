@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=System Console
+Name[zh_CN]=系统监控台
+Comment=Desktop CPU+GPU+net monitoring HUD
+Exec=system-console %U
+Icon=system_console.png
+Terminal=false
+Categories=Monitor;System;
